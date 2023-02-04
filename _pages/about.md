@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Software Engineer
 
@@ -9,7 +9,7 @@ profile:
   image: marlonbraga.jpg
   image_circular: true # crops the image to make it circular
   address: >
-    "Code hard. Play harder"
+    "Code hard, play harder"
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -23,3 +23,5 @@ Solid knowledge in C# and DOTNET languages. Enthusiastic about good development 
 Graduated in Computer Science, he has a specialization in Software Engineering with a focus on .NET and an MBA in Project Management with Agile Methods. Founder of a Virtual Reality company. He has an article published by the SVR-Symposium on Virtual and Augmented Reality. Experience in managing software teams and coordinating small projects.
 
 Focused on technical improvement, it constantly seeks to expand knowledge and acquire new experiences and professional growth in the area of software engineering and architecture.
+
+&nbsp;

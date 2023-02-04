@@ -9,7 +9,7 @@ last_name: Braga
 email: marlon@marlonbraga.com.br
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   My notes from studing and research; =]
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+keywords: developer, programmer, software, coder, engineer, dotnet, c-sharp, c#  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 👨🏻‍💻  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -25,7 +25,7 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 
 # code highlighter theme
 highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
-highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme_dark: monokai   # https://github.com/jwarby/jekyll-pygments-themes
 
 # repo color theme
 repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
@@ -68,7 +68,7 @@ gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: marlonbraga # your LinkedIn user name
-telegram_username: # your Telegram user name
+telegram_username: marlon_braga # your Telegram user name
 scholar_userid: # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: +5521995009727 # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
@@ -93,8 +93,7 @@ facebook_id: # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: 
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -110,10 +109,10 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: notes # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+blog_name: Posts # blog_name will be displayed in your blog page
+blog_nav_title: Posts # your blog must have a title for it to be displayed in the nav bar
 blog_description: sharing ideas, experience and knowledge
-permalink: /blog/:year/:title/
+permalink: /posts/:year/:title/
 
 # Pagination
 pagination:
@@ -153,7 +152,7 @@ external_sources:
 collections:
   news:
     defaults:
-      layout: post
+      layout: Posts
     output: true
     permalink: /news/:path/
   projects:
@@ -228,15 +227,16 @@ jekyll-minifier:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  enabled: [year, tags, categories, lang] # enables year, tag and category archives (remove if you need to disable one of them).
   layouts:
     year: archive-year
     tag: archive-tag
     category: archive-category
+    lang: archive-language
   permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+    year: '/posts/:year/'
+    tag: '/posts/tag/:name/'
+    category: '/posts/category/:name/'
 
 display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
 
