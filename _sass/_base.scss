@@ -13,11 +13,20 @@ hr {
 }
 
 table {
+  line-height: 1.7em;
+  border-collapse: collapse;
   td, th {
     color: var(--global-text-color);
+    font-size: 15px;
+    padding: 2px 8px;
   }
   td {
     font-size: 1rem;
+    padding-top: 2px;
+    border-bottom: 1px solid var(--global-divider-color);
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: 300;
   }
 }
 

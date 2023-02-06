@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: distill
 title: Code Pattern
 lang: en
 ref: 3
@@ -9,23 +9,30 @@ tags: code
 categories: sample-posts
 disqus_comments: true
 ---
-### <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" width="20" height="20"> Back-End
+### <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" width="20" height="20"> Back-End  
 
-#### Nomenclature
+#### Nomenclature  
 
-Element            | Part of speech    | Rule           | Example
------------------- |------------------ |--------------- | -------------
-Class              | Substantive       | PascalCase     | `Product`
-Interface          | Substantive       | `I`+PascalCase | `IProduct`
-Método             | Verb              | PascalCase     | `ListTickets`
-Property           | -                 | PascalCase     | `Tickets`
-Public Variables   | -                 | camelCase      | `idProduct`
-Private  Variables | -                 | `_`+camelCase  | `_totalReceipt`
-Constant s         | -                 | PascalCase     | `PageTitle`
+| **Element**        | **Part of speech** | **Rule**       | **Example**     |
+| ------------------ |:------------------:|:--------------:| --------------- |
+| Class              | Substantive        | PascalCase     | `Product`       |
+| Interface          | Substantive        | `I`+PascalCase | `IProduct`      |
+| Method             | Verb               | PascalCase     | `ListTickets`   |
+| Property           | -                  | PascalCase     | `Tickets`       |
+| Public Variables   | -                  | camelCase      | `idProduct`     |
+| Private Variables  | -                  | `_`+camelCase  | `_totalReceipt` |
+| Constant           | -                  | PascalCase     | `PageTitle`     |
+  
+  
+#### Formatting  
 
-#### Formatting
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
-##### Identação & Espaçamento
+##### Identação & Espaçamento  
 
 ```
 {
