@@ -13,7 +13,7 @@ disqus_comments: true
 
 #### Nomenclatura
 
-Elemento           | Classe Gramatical | Regra          | Exemplo
+ELEMENTO           | CLASSE GRAMATICAL | REGRA          | EXEMPLO
 ------------------ |------------------ |--------------- | -------------
 Classe             | Substantivo       | PascalCase     | `Produto`
 Interface          | Substantivo       | `I`+PascalCase | `IProduto`
@@ -34,9 +34,7 @@ diasUteis++;     // ❌ sem espaços
   diasUteis++;   // ❌ 2 espaços
 }
 ```
-#####   
-
-Cada linha devera conter apenas uma instrução de código  
+#####  Cada linha devera conter apenas uma instrução de código  
 ❌  
 ```
 i++; contador++; _recebimentoTotal=0;  

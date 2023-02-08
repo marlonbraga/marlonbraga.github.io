@@ -14,16 +14,21 @@ hr {
 
 table {
   line-height: 1.7em;
+  margin-bottom: 1.5rem;
   border-collapse: collapse;
+  th {
+    text-align: center;
+    font-weight: 600;
+  }
   td, th {
     color: var(--global-text-color);
     font-size: 15px;
     padding: 2px 8px;
+    border: 1px solid var(--global-divider-color);
   }
   td {
     font-size: 1rem;
     padding-top: 2px;
-    border-bottom: 1px solid var(--global-divider-color);
     display: table-cell;
     vertical-align: inherit;
     font-weight: 300;

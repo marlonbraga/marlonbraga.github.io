@@ -1,5 +1,5 @@
 ---
-layout: distill
+layout: post
 title: Code Pattern
 lang: en
 ref: 3
@@ -10,10 +10,13 @@ categories: sample-posts
 disqus_comments: true
 ---
 ### <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" width="20" height="20"> Back-End  
+Blablablabla blablabla blabalbla blablabla
+
+Here is a formating os code than I most like to work in my professional path
 
 #### Nomenclature  
 
-| **Element**        | **Part of speech** | **Rule**       | **Example**     |
+| **ELEMENT**        | **PART OF SPEECH** | **RULE**       | **EXAMPLE**     |
 | ------------------ |:------------------:|:--------------:| --------------- |
 | Class              | Substantive        | PascalCase     | `Product`       |
 | Interface          | Substantive        | `I`+PascalCase | `IProduct`      |
@@ -23,16 +26,9 @@ disqus_comments: true
 | Private Variables  | -                  | `_`+camelCase  | `_totalReceipt` |
 | Constant           | -                  | PascalCase     | `PageTitle`     |
   
-  
-#### Formatting  
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
 
-##### Identação & Espaçamento  
+##### Indentation and Spacing
 
 ```
 {
