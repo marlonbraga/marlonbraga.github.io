@@ -11,6 +11,17 @@ disqus_comments: true
 ---
 ### <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" width="20" height="20"> Back-End
 
+Os desenvolvedores passam mais tempo lendo código fonte do que o escrevendo um. Para aumentar a produtividade do profissional, um código fácil de ser lido e entendido faz diferença.
+
+O Clean Code aborda pontos muito relevantes para um código mais legível. Porém, há uma abordagem adicional: a Padronização de código.
+
+A ideia é que o time não só receba um código limpo mas também um estilo de código do qual ele já está familiarizado e acostumado a lidar diariamente. Para isso, todos os desenvolvedores do time devem escrever no mesmo estilo. Estilo que será definido em um documento de boas práticas para a equipe.
+
+
+---
+
+Segue abaixo um template markdown de uma documentação de padrão de código.
+
 #### Nomenclatura
 
 ELEMENTO           | CLASSE GRAMATICAL | REGRA          | EXEMPLO
