@@ -10,9 +10,13 @@ categories: sample-posts
 disqus_comments: true
 ---
 ### <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" width="20" height="20"> Back-End  
-Blablablabla blablabla blabalbla blablabla
+Developers spend more time reading source code than writing one. To increase the professional's productivity, a code that is easy to read and understand makes a difference.
 
-Here is a formating os code than I most like to work in my professional path
+Clean Code addresses very relevant points for a more readable code. However, there is an additional approach: Code Standardization.
+
+The idea is that the team not only receives clean code but also a code style that they are already familiar with and used to dealing with on a daily basis. For this, all developers on the team must write in the same style. Style that will be defined in a best practices document for the team.
+
+Below is a markdown template from a code pattern documentation.
 
 #### Nomenclature  
 

@@ -3,7 +3,7 @@ layout: post
 title: Plugins gratuitos para VS 2022
 lang: pt-br
 ref: 11
-date: 2023-03-01 22:00:00
+date: 2023-02-19 01:00:00
 description: Mais produtividade com VisualStudio 22 sem pagar mais
 tags: formatting code
 categories: sample-posts
@@ -16,7 +16,7 @@ O plugin mais completo e famoso que temos é o [ReSharper](https://www.jetbrains
 
 Aqui estão 3 escolhas para de plugins gratuitos para quem não quer abrir mão da produtividade mas é ~~mão-fechada~~ simpático a ideia de economizar.
 
-# FineCodeCoverage
+## FineCodeCoverage
 Você faz testes automatizados? Bom trabalho. Mas sabe dizer o quanto de seu código está coberto por testes e quais são as linhas que estão desprotegidas?
 
 Com esse plugin você pode verificar a cobertura de código de cada classe e método diretamente pelo VS22.
@@ -32,7 +32,7 @@ O [FineCodeCoverage](https://marketplace.visualstudio.com/items?itemName=Fortune
 ![coveraged-line](/assets/img/2023-03-01-plugin-free-vs22/coveraged-line.png)
 ![coveraged-percentage](/assets/img/2023-03-01-plugin-free-vs22/coveraged-percentage.png)
 
-# CodeMaintainability 2022
+## CodeMaintainability 2022
 O Visual Studio realiza verificação da qualidade do seu código através do `Analyser > Calculate Code Metrics`.
 Porém, com o [CodeMaintainability 2022](https://marketplace.visualstudio.com/items?itemName=ognjen-babic.CodeMaintainability2022) permite essa visualização diretamente no editor. Exibindo na assinatura de cada método seu **índice de manutenibilidade** e um ícone com a indicação da "saúde" de seu código.
 
@@ -45,7 +45,7 @@ Só faltou a métrica de **complexidade cognitiva** para ficar completo.
  > Marketplace: [CodeMaintainability 2022](https://marketplace.visualstudio.com/items?itemName=ognjen-babic.CodeMaintainability2022)  
 
 
-# CodeMaid
+## CodeMaid
 O Visual Studio é capaz de fazer algumas sugestões de refatoração no seu código. O plugin [CodeMaid](https://marketplace.visualstudio.com/items?itemName=SteveCadwallader.CodeMaidVS2022) aumenta o repertório nativo da IDE e possibilita uma gama maior de refatorações para deixar seu código mias limpo e simples.
 
 Além disso, o plugin também conta com recursos como:
@@ -58,13 +58,13 @@ Além disso, o plugin também conta com recursos como:
  > Marketplace: [CodeMaid](https://marketplace.visualstudio.com/items?itemName=SteveCadwallader.CodeMaidVS2022)  
  > GitHub: [Repository](https://github.com/codecadwallader/codemaid)
 
-## Recursos Variados
+### Recursos Variados
 ![code-manutenability](/assets/img/2023-03-01-plugin-free-vs22/codemaid-menu.png)
-## Barra de carregamento de build:
+### Barra de carregamento de build:
 ![code-manutenability](/assets/img/2023-03-01-plugin-free-vs22/codemaid-buildbar.png)
-## Spades - Estrutura de classe
+### Spades - Estrutura de classe
 ![code-manutenability](/assets/img/2023-03-01-plugin-free-vs22/codemaid-spades.png)
-## Configuração de opções e regras
+### Configuração de opções e regras
 ![code-manutenability](/assets/img/2023-03-01-plugin-free-vs22/codemaid-options.png)
 
 
