@@ -3,12 +3,12 @@ layout: post
 title: Fazendo Pull Requests elegantes
 lang: pt-br
 ref: 10
-date: 2023-02-16 15:09:00
+date: 2023-02-16 18:00:00
 description: O que devemos escrever na descrição de nosso PR?
 tags: formatting code
 categories: sample-posts
 disqus_comments: true
----2023-02-16-elegant-pull-request.md
+---
 
 A revisão de código alheio pode ser uma tarefa ingrata. Principalmente quando contém uma bíblia de alterações significativas e arriscadas.
 
@@ -127,7 +127,7 @@ Todas as chamadas ao contexto do banco de dados foi removida da classe service p
 
 ![Diagrama de clases](image.jpg)
 
-# 🌡️Qualidade de código
+### **🌡️Qualidade de código**
 Código resultante demonstrou maior legibilidade.  
 	- Aumento de Índice de manutenabilidade  
 	- Diminuição de Acoplamento de Classes  
@@ -145,7 +145,7 @@ Parte dessa melhora se deu por causa da *extração de método* criando o ` ____
 | Acoplamento de Classes     | 0             | - 100%       |
 | Linhas de código           | 1000          | + 100%       |
 
-# 🧪Testes Automatizados
+### **🧪Testes Automatizados**
   - ___ novos testes unitários criados
   - Cobertura de todos os fluxos de código do método em questão (___/___)
   - ___% de cobertura de código no método em questão
@@ -154,6 +154,48 @@ Parte dessa melhora se deu por causa da *extração de método* criando o ` ____
 ![testes](image.png)
 
 Cobertura
+![code-cov](image.png)
+
+```
+
+## PR Template:
+
+```
+The purpose of these changes is __________.
+
+# **📐Design Decisions**
+To allow the creation of unit tests, it was necessary to adapt the class to the principle of **Inversion of control (SOLID)** .
+All database context calls have been removed from the service class for new DAO classes `______` , `______`, `______`. The `ResgatesAgendadosService` class starts to depend on its abstractions, allowing the necessary decoupling to carry out unit tests.
+
+![Class diagram](image.jpg)
+
+# **🌡️Code quality**
+Resulting code demonstrated greater readability.
+- Increased maintainability index
+- Decreased Coupling of Classes
+- Reduction of Cyclomatic Complexity
+- Reduction of lines of code
+Part of this improvement was due to *method extraction* creating ` ______()`.
+
+![Code_metrics](image.png)
+| **METRIC** | **INDICATOR** | **EVOLUTION** |
+| -------------------------- |:-------------:|:------ ------ :|
+| Cognitive Complexity | 10% | + 100% |
+| Cyclimatic Complexity | 1 | + 100% |
+| Inheritance Depth | 0 | - 100% |
+| Maintainability Index | 100 | + 100% |
+| Class Coupling | 0 | - 100% |
+| Lines of code | 1000 | + 100% |
+
+# **🧪Automated Tests**
+   - ___ new unit tests created
+   - Coverage of all code streams of the method in question (___/___)
+   - ___% code coverage on the method in question
+   - Increased code coverage in related methods
+
+![tests](image.png)
+
+Coverage
 ![code-cov](image.png)
 
 ```

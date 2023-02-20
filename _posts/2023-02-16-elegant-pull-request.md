@@ -54,7 +54,7 @@ Ex.:
 > To allow the creation of unit tests, it was necessary to adapt the class to the principle of Inversion of Control (SOLID).
 > All database context calls removed from service class for new DAO classes `CreatureRepository` , `PlayersRepository`, `ExperiencePointsRepository`. The `DungeonBuilderService` class starts to depend on its abstractions, allowing the necessary decoupling to carry out unit tests.
 
-  ![Class diagram](/assets/img/2023-02-16-pull-request-elegant/class-diagram.png)
+  ![Class diagram](/assets/img/2023-02-16-pull-request-elegante/class-diagram.png)
 
 ## Code Quality Metrics
 Assure the reviewer that you cared about keeping your code maintainable instead of messing around just to get the job done faster.
@@ -98,4 +98,61 @@ Some important information is:
 - What manual tests were performed
 
 Ex.:
-> - 2 new ones
+> - 2 new unit tests created
+> - Coverage of all code streams of the method in question (2/2)
+> - 100% code coverage on the method in question
+> - Increased code coverage in related methods
+
+![code-coverage](/assets/img/2023-02-16-pull-request-elegante/code-coverage.png)
+
+
+## Integration
+Sometimes the change is not with the code but with the change itself and how much it can affect the stability of the system in operation.
+
+- Impacts other areas
+- Does it impact systems already in operation?
+- Is there any configuration in the system to be done?
+
+---
+
+## PR Template:
+
+```
+The purpose of these changes is __________.
+
+### **📐Design Decisions**
+To allow the creation of unit tests, it was necessary to adapt the class to the principle of **Inversion of control (SOLID)** .
+All database context calls have been removed from the service class for new DAO classes `______` , `______`, `______`. The `ResgatesAgendadosService` class starts to depend on its abstractions, allowing the necessary decoupling to carry out unit tests.
+
+![Class diagram](image.jpg)
+
+# 🌡️Code quality
+Resulting code demonstrated greater readability.
+- Increased maintainability index
+- Decreased Coupling of Classes
+- Reduction of Cyclomatic Complexity
+- Reduction of lines of code
+Part of this improvement was due to *method extraction* creating ` ______()`.
+
+![Code_metrics](image.png)
+| **METRIC**                 | **INDICATOR** | **EVOLUTION** |
+| -------------------------- |:-------------:|:------------ :|
+| Cognitive Complexity       | 10%           | + 100%        |
+| Cyclimatic Complexity      | 1             | + 100%        |
+| Inheritance Depth          | 0             | - 100%        |
+| Maintainability Index      | 100           | + 100%        |
+| Class Coupling             | 0             | - 100%        |
+| Lines of code              | 1000          | + 100%        |
+
+# 🧪Automated Tests
+   - ___ new unit tests created
+   - Coverage of all code streams of the method in question (___/___)
+   - ___% code coverage on the method in question
+   - Increased code coverage in related methods
+
+![tests](image.png)
+
+Coverage
+![code-cov](image.png)
+
+```
