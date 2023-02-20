@@ -4,7 +4,7 @@ title: Readability in unit tests
 lang: en
 ref: 4
 date: 2023-02-04 15:09:00
-Description: Tips to increase the readability of unit tests
+description: Tips to increase the readability of unit tests
 tags: test code
 categories: sample posts
 disqus_comments: true
