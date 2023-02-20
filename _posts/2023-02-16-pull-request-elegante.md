@@ -8,7 +8,7 @@ description: O que devemos escrever na descrição de nosso PR?
 tags: formatting code
 categories: sample-posts
 disqus_comments: true
----
+---2023-02-16-elegant-pull-request.md
 
 A revisão de código alheio pode ser uma tarefa ingrata. Principalmente quando contém uma bíblia de alterações significativas e arriscadas.
 
@@ -29,12 +29,12 @@ Que problemas ele resolve?
 Ex.: 
 
 ```
-O objetivo dessas alterações é a refatoração da classe `ResgateAgendadoService` .
-Mais especificamente, o método `SalvarResgatesAgendados`.
+O objetivo dessas alterações é a refatoração da classe `GameService` .
+Mais especificamente, o método `SaveGame`.
 ```
 
 ## Decisões de design
-Mas porquê precisava criar uma classe nova em vez de usar a existente?
+Mas por quê precisava criar uma classe nova em vez de usar a existente?
 Por quê separar um trecho de código de uma classe?
 Precisava mesmo de tanta interface assim?
 Porque essas classes novas estão nesse diretório e não na pasta raiz?
@@ -51,17 +51,17 @@ Um diagrama de classes básico, pode economizar um tempo precioso se quiser real
 
 Ex.:
 
-> Para permitir a criação de testes unittários, foi necessário adequar a classe ao princípio de Inversão de controle (SOLID).
-> Todas as chamadas ao contexto do banco de dados foi removida da classe service para novas classes DAO `ResgateAgendadoDao` ,  `ClientesContasDao`, `AuditDao`. A classe `ResgatesAgendadosService` passa a depender de suas abstrações possibilitando > desacoplamento necessário para realização de testes unitários.
+> Para permitir a criação de testes unitários, foi necessário adequar a classe ao princípio de Inversão de controle (SOLID).
+> Todas as chamadas ao contexto do banco de dados foi removida da classe service para novas classes de DAO `CreatureRepository` ,  `PlayersRepository`, `ExperiencePointsRepository`. A classe `DungeonBuilderService` passa a depender de suas abstrações possibilitando o  desacoplamento necessário para realização de testes unitários.
 
- ![Diagrama de clases](/assets/img/2023-01-15-padrao-de-codigo/class-diagram.jpg)
+ ![Diagrama de clases](/assets/img/2023-02-16-pull-request-elegante/class-diagram.png)
 
 ## Métricas de Qualidade de código
 Dê segurança ao revisor de você se importou manter seu código manutenível em vez de sair bagunçando tudo só para entregar a tarefa mais rápido.
 
 Os fatos não se importam com a opinião de ninguém.
 Métricas dizem os fatos e atropelam a opinião de seus revisores mais implicantes. É uma forma de contornar a objeção relacionadas a "estilo de escrita". Afinal de contas, deve-se sacrificar nosso índice de manutenibilidade do código por causa de um capricho do revisor?
-Será que prefer~encias estéticas tem tanta importância quando a uma queda no acoplamento na classe tal ou um método que nasceu com baixa complexidade cognitiva?
+Será que preferências estéticas tem tanta importância quando a uma queda no acoplamento na classe tal ou um método que nasceu com baixa complexidade cognitiva?
 Obs.: (Se seu código estiver ferindo nenhum acordo ou padrão pré-estabelecido pelo time, não é uma questão de opinião. Você deve altera-lo sim)
 
 Um print do Code Analyser do Visual Studio é bem-vindo. Mas uma tabela simples serve.
@@ -74,16 +74,16 @@ Ex.:
 > 	- Redução de Complexidade ciclomática *(de 47 para 5)*  
 > 	- Redução de linhas de código *(de 133 para 35)*  
 >
->  Parte dessa melhora se deu por causa da *extração de método* criando o `ConvertViewModelToEntity()`.
+>  Parte dessa melhora se deu por causa da *extração de método* criando o `ConverterModelParaEntidade()`.
 
-| **MÉTRICA**                | **INDICADOR** | **EVOLUÇÃO** |
-| -------------------------- |:-------------:|:------------:|
-| Índice de Manutenibilidade | 51            | + 27%        |
-| Complexidade Ciclimática   | 5             | - 42%        | 
-| Acoplamento de Classes     | 0             | - 6%         |
-| Linhas de código           | 35            | - 98         |
+| **MÉTRICA**                | **INDICADOR** | **COMPARATIVO** |
+| -------------------------- |:-------------:|:---------------:|
+| Índice de Manutenibilidade | 51            | + 27%           |
+| Complexidade Ciclimática   | 5             | - 42%           | 
+| Acoplamento de Classes     | 0             | - 6%            |
+| Linhas de código           | 35            | - 98            |
 
-![Code_metrics](/assets/img/2023-01-15-padrao-de-codigo/code_metrics.png)
+![Code_metrics](/assets/img/2023-02-16-pull-request-elegante/code-metrics.png)
 
 Para um profissional de código, é melhor ser reconhecido pela qualidade do meu trabalho do que a velocidade com a que entrego. Essa é uma ótima forma de mostrar.
 
@@ -103,8 +103,7 @@ Ex.:
 >  - 100% de cobertura de código no método em questão
 >  - Aumento de cobetura de código em métodos relacionados
 	
-![testes](/assets/img/2023-01-15-padrao-de-codigo/tests.png)
-![code-cov](/assets/img/2023-01-15-padrao-de-codigo/code-coverage.png)
+![code-coverage](/assets/img/2023-02-16-pull-request-elegante/code-coverage.png)
 
 
 ## Integração
@@ -124,7 +123,7 @@ O objetivo dessas alterações é __________.
 
 ### **📐Decisões de design**
 Para permitir a criação de testes unitários, foi necessário adequar a classe ao princípio de **Inversão de controle (SOLID)** .
-Todas as chamadas ao contexto do banco de dados foi removida da classe service para novas classes DAO `ResgateAgendadoDao` , `ClientesContasDao`, `AuditDao`. A classe `ResgatesAgendadosService` passa a depender de suas abstrações possibilitando desacoplamento necessário para realização de testes unitários.
+Todas as chamadas ao contexto do banco de dados foi removida da classe service para novas classes DAO `______` , `______`, `______`. A classe `ResgatesAgendadosService` passa a depender de suas abstrações possibilitando desacoplamento necessário para realização de testes unitários.
 
 ![Diagrama de clases](image.jpg)
 
@@ -132,9 +131,9 @@ Todas as chamadas ao contexto do banco de dados foi removida da classe service p
 Código resultante demonstrou maior legibilidade.  
 	- Aumento de Índice de manutenabilidade  
 	- Diminuição de Acoplamento de Classes  
-	- Redução de Complexidade ciclomátic  
+	- Redução de Complexidade ciclomática  
 	- Redução de linhas de código  
-Parte dessa melhora se deu por causa da *extração de método* criando o ` ConvertViewModelToEntity()`.
+Parte dessa melhora se deu por causa da *extração de método* criando o ` ______()`.
 
 ![Code_metrics](image.png)  
 | **MÉTRICA**                | **INDICADOR** | **EVOLUÇÃO** |

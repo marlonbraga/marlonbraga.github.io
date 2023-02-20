@@ -12,18 +12,20 @@ disqus_comments: true
 
 ## Pra quê legibilidade e testes?
 
-O teste unitário é mias do que uma validação automática do código. Ele também serve como documentação. Ele mostra o que se deve e o que não se deve esperar de comportamento do método.
+O teste unitário é mais do que uma validação automática do código. Ele também serve como documentação mostrando o que se deve e o que não se deve esperar do comportamento do método.
 
-Por isso é especialmente interessante que o código fique legível.
+Por isso é especialmente interessante que o código fique **legível**.
 
 Além disso, os testes unitário também são código. Portanto também estão suscetíveis a manutenção. Essa manutenção deve ser tão simples e rápida como qualquer outro pedaço de código da solução.
 
 
 ## Nomenclatura
 Nomes importam em testes também.
-Durante a suite de execução de testes, é o nome do método de teste que será exibido ao lado de uma mensagem de aprovação ou reprovação.
+Durante a suíte de execução de testes, é o nome do método de teste que será exibido ao lado de uma mensagem de aprovação ou reprovação.
 
-A maneira mais legível de se nomear um teste é atravé do padrão Given/When/Then (Dado/Quando/Então)
+ ![Suíte de Tests](/assets/img/2023-02-04-legibilidade-em-testes/execution_suit_tests.png)
+
+A maneira mais legível de se nomear um teste é através do padrão Given/When/Then (Dado/Quando/Então)
 
 Sendo que 
 `Dado` é uma precondição.
@@ -38,13 +40,13 @@ void ContaBancaria_Transferencia_SaldoEhReduzido(){
 }
 ```
 
-Não é necessário netrar em detalhes demais. Esse é o nome do teste. Se quiserem saber detalhes, que leiam o código dele.
+Não é necessário entrar em detalhes demais. Esse é o nome do teste. Se quiserem saber detalhes, que leiam o código dele.
 
 ## Limpeza de teste
 
-> O que torna um teste limpo? Três coisas: legibilidade, legibilidade e legibilidade. (...) O que torna os testes legíveis? O mesmo que torna todos os códigos legíveis: clareza, simplicidade e conscistência de expressão. Num teste você quer dizer muito com o mínimo de expressões possíveis.
-
--- Uncle Bob, Clean Code
+> O que torna um teste limpo? Três coisas: legibilidade, legibilidade e legibilidade. (...) O que torna os testes legíveis? O mesmo que torna todos os códigos legíveis: clareza, simplicidade e conscistência de expressão. Num teste você quer dizer muito com o mínimo de expressões possíveis.  
+>  
+> -- Uncle Bob, Clean Code
 
 ### Uma afirmação por teste
 Testes que chegam a uma única conclusão são mais fáceis de serem entendidos.
@@ -59,6 +61,16 @@ Apesar de ser intuitivo, o padrão AAA (Arrange-Act-Assert) continua sendo uma �
 A ideia é que o trecho de código de `preparação do teste` seja separada do trecho de `realização do teste` do trecho de `verificação do teste`.
 Na prática, o codificador sabe aonde tudo está sem nem mesmo começar a ler o código.
 
+```c#
+// arranque
+var repositorio = Substitute.For<IClienteRepositorio>();
+var cliente = new Cliente(repositorio);
+// ação
+cliente.Salvar();
+// assertiva
+mock.Received.AlgumMetodo();
+```
+
 Para mais detalhes sobre o padrão AAA, ,eu sugiro esse artigo aqui: <a href="https://medium.com/@pablodarde/o-padr%C3%A3o-triple-a-arrange-act-assert-741e2a94cf88">O Padrão Triple A (Arrange, Act, Assert)</a>
 
 
@@ -71,7 +83,9 @@ Há algumas ferramentas que podem ajudar a alcançar a legibilidade desejada.
 
 ### NSustitute
 **NSustitute** é uma alternativa ao **Moq**. 
-Com ele, a leitura e a escrita de códigos mais comuns se aproxima da linguagem natural. O Moq é uma boa ferramenta de Mock em vários pontos. Mas em relação a legibilidade do código, não é uma delas.
+Com ele, a leitura e a escrita de códigos mais comuns se aproxima da linguagem natural. O Moq é uma boa ferramenta de Mock em vários pontos. Mas a legibilidade do teste, não é uma delas.
+
+Enquanto o Moq faz uso de operação lambda para as situações mais simples, um mock escrito com NSubstitute se aproxima mais na linguagem natual.
 
 ```c#
 //❌com Moq
@@ -88,6 +102,8 @@ mock.SearchById(2).Returns(userList.First());
 ### FluentAssetion
 **FluentAssetion** é uma alternativa ao **System.Assert**. 
 Esse package segue a mesma ideia da anterior. Porém voltada para a fase de Assert do teste.
+
+O destaque está no nome dos métodos. Quando combinados, a leitura fica fluída exatamente como leria uma regra de negócio em inglês.
 
 ```c#
 //❌com Assert
@@ -112,15 +128,15 @@ NuGet\Install-Package FluentAssertions -Version 6.9.0
 
 ## Por que não usar o SpecFlow?
 
-
->"O martelo é uma ferramenta muito útil. Por isso, vou usá-la para tudo. Todos os dias escovo meus dentes com meu martelo."
+É como diz o ditado:
+>"Para quem só sabe usar martelo, todo problema é um prego."
 
 SpecFlow é uma ferramenta muito interessante e útil.
-Porém, ela é produtiva quando usada para o fim da qual foi criada. Quando foge disso, ela pode atrapalhar mais do que ajudar.
+Porém, ela é produtiva quando usada para o fim da qual foi criada. Quando foge disso, ela atrapalha mais do que ajuda.
 
-SpecFlow é uma ferramenta de BDD que consiste em realizar especificação por exemplos com Gherkin, uma linguagem comum a QA, Dev e PO. Isso é muito útil em um teste End-To-End e até em um teste de Integração. Mas o teste unitário é feito e mantido apenas pelo Dev. É necessário que a linguagem de um teste unitário seja mais técnica. Usar o Gherkin para descrever a funcionalidade em uma linguagem técnica é mais improdutivo do que usar os testes tradicionais.
+SpecFlow é uma ferramenta de BDD. Essa, consiste em realizar especificação por exemplos com **Gherkin**, uma linguagem comum a QA, Desenvolvedor e PO. Isso é muito útil em um *teste End-To-End* e até em um *teste de Integração*. Mas o teste unitário é feito e mantido apenas pelo Desenvolvedor. Por isso, é necessário que a linguagem de um teste unitário seja mais técnica. Usar o **Gherkin** para descrever a funcionalidade em uma linguagem técnica é mais improdutivo do que usar os testes tradicionais.
 
-Mas vamos falar mais do BDD+Specflow em outra oportunidade.
+Mas vamos falar mais do **BDD+Specflow** em outra oportunidade.
 
 A ideia é que, por hora, deixemos o SpecFlow de fora dos nossos testes unitário.
 
