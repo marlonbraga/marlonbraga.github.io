@@ -10,14 +10,13 @@ categories: sample-posts
 disqus_comments: true
 ---
 
-Reviewing someone else's code can be a thankless task. Especially when it contains a bible of significant and risky changes.
+Reviewing someone else's code can be a thankless task. Especially when it contains a large amount of changes.
 
-However, if there is still love in your heart, there is a way to make life easier for the unfortunate creature who will have to review this almost infinite amount of changes in a code, which, by the way, was not written by him.
-you can choose to create a good Readme to help you in this task.
-~Do small pull requests~
-Make a relevant description of your Pull Request.
+The ideal is always to opt for small pull-requests. But that is always possible.
 
-What would it be relevant to put in a PR description?
+In these cases, we can make life easier for the unfortunate creature who will have to review this almost infinite amount of changes in a code. After all, we don't want bugs to make it into our repository's master branch, and this code wasn't written by him.
+
+A good Readme can be helpful in this task. But what would it be relevant to put in a Pull Request description?
 
 
 ## Goal

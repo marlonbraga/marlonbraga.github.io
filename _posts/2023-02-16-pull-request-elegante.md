@@ -10,14 +10,13 @@ categories: sample-posts
 disqus_comments: true
 ---
 
-A revisão de código alheio pode ser uma tarefa ingrata. Principalmente quando contém uma bíblia de alterações significativas e arriscadas.
+A revisão de código alheio pode ser uma tarefa ingrata. Principalmente quando contém uma grande quantidade de alterações.
 
-Porém, se ainda houver amor no seu coração, há uma forma de facilitar a vida da infeliz criatura que terá de revisar essa quantidade quase infinita de mudanças em um código, que diga-se de passagem, não foi escrito por ele. 
-pode-se optar criar um bom Reademe que o ajude nessa tarefa.
-~Faça Pull Requests pequenos~
-Faça uma decrição relevante de seu Pull Request.
+O ideal é sempre optar por pull-requests pequenos. Porém isso bem sempre é possível.
 
-O que seria revante colocar em uma descrição de PR?
+Nesses casos, podemos facilitar a vida da infeliz criatura que terá de revisar essa quantidade quase infinita de mudanças em um código. Afinal de contas, não queremos que erros entrem na branch principal do nosso repositório e esse código não foi escrito por ele. 
+
+Um bom Reademe pode ser útil nessa tarefa. Mas o que seria revante colocar em uma descrição de Pull Request?
 
 
 ## Objetivo

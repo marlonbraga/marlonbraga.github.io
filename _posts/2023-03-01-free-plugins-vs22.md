@@ -14,7 +14,7 @@ Visual Studio 2022 looks great. But it can gain very interesting features when y
 
 The most complete and famous plugin we have is [ReSharper](https://www.jetbrains.com/pt-br/resharper/). However, it is not the most... economical choice.
 
-Here are 3 choices of free plugins for those who don't want to give up productivity but are ~~penny-pincher~~ interested in idea of saving money.
+Here are 3 choices of free plugins for those who don't want to give up productivity but are ~~penny-pincher~~ interested saving money.
 
 ## FineCodeCoverage
 Do you do automated tests? Good job. But do you know how much of your code is covered by tests and which lines are unprotected?
