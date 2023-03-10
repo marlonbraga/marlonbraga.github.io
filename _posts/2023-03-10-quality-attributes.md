@@ -4,7 +4,7 @@ title: Quality Attributes
 lang: en
 ref: 5
 date: 2023-03-10 10:00:00
-description: -ilities, the Architecture Characteristics Defined
+description: The '-ilities', Architecture Characteristics Defined
 tags: archtecture
 categories: sample-posts
 disqus_comments: true

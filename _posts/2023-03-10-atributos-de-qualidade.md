@@ -4,7 +4,7 @@ title: Atributos de Qualidade
 lang: pt-br
 ref: 5
 date: 2023-03-10 10:00:00
-description: Características da Arquitetura Definidas
+description: Os '-ilities', Características da Arquitetura Definidas
 tags: archtecture
 categories: sample-posts
 disqus_comments: true
