@@ -10,9 +10,17 @@ categories: sample-posts
 disqus_comments: true
 ---
 
+| **MÉTRICA**                | **INDICADOR** | **COMPARATIVO** |
+| -------------------------- |:-------------:|:---------------:|
+| Índice de Manutenibilidade | 51            | + 27%           |
+| Complexidade Ciclimática   | 5             | - 42%           | 
+| Acoplamento de Classes     | 0             | - 6%            |
+| Linhas de código           | 35            | - 98            |
+
 ## Operational
+
 | **TERM**                | **DEFINITION**                                                                                                                                                                                                                         |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Availability            | How long the system will need to be available (if 24/7, steps need to be in place to allow the system to be up and running quickly in case of any failure).                                                                            |
 | Continuity              | Disaster recovery capability.                                                                                                                                                                                                          |
 | Performance             | Includes stress testing, peak analysis, analysis of the frequency of functions used, capacity required, and response times. Performance acceptance sometimes requires an exercise of its own, taking months to complete.               |
@@ -23,21 +31,23 @@ disqus_comments: true
 
 
 ## Structural
+
 | **TERM**                | **DEFINITION**                                                                                                                                                                                                                         |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Configurability         | Ability for the end users to easily change aspects of the software’s configuration (through usable interfaces).                                                                                                                        |
 | Extensibility           | How important it is to plug new pieces of functionality in.                                                                                                                                                                            |
 | Installability          | Ease of system installation on all necessary platforms.                                                                                                                                                                                |
 | Leverageability/reuse   | Ability to leverage common components across multiple products.                                                                                                                                                                        |
 | Localization            | Support for multiple languages on entry/query screens in data fields; on reports, multibyte character requirements and units of measure or currencies.                                                                                 |
 | Maintainability         | How easy it is to apply changes and enhance the system?                                                                                                                                                                                |
-| Portability             | Does the system need to run on more than one platform? (For example, does the frontend need to run against Oracle as well as SAP DB?                                                                                                   |
+| Portability             | Does the system need to run on more than one platform? (For example, does the frontend need to run against Oracle as well as SAP DB?)                                                                                                  |
 | Upgradeability          | Ability to easily/quickly upgrade from a previous version of this application/solution to a newer version on servers and clients.                                                                                                      |
 
 
 ## Cross-Cutting
+
 | **TERM**                | **DEFINITION**                                                                                                                                                                                                                         |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Accessibility           | Access to all your users, including those with disabilities like colorblindness or hearing loss.                                                                                                                                       |
 | Archivability           | Will the data need to be archived or deleted after a period of time? (For example, customer accounts are to be deleted after three months or marked as obsolete and archived to a secondary database for future access.)               |
 | Authentication          | Security requirements to ensure users are who they say they are.                                                                                                                                                                       |

@@ -11,8 +11,9 @@ disqus_comments: true
 ---
 
 ## Operacional
-| **TERMO**                | **DEFINIÇÃO**                                                                                                                                                                                                                                    |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+| **TERMO**                  | **DEFINIÇÃO**                                                                                                                                                                                                                                  |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Disponibilidade            | Quanto tempo o sistema precisará estar disponível (se 24 horas por dia, 7 dias por semana, as etapas precisam estar em vigor para permitir que o sistema esteja funcionando rapidamente em caso de falha).                                     |
 | Continuidade               | Capacidade de recuperação de desastres.                                                                                                                                                                                                        |
 | Desempenho                 | Inclui teste de estresse, análise de pico, análise da frequência das funções usadas, capacidade necessária e tempos de resposta. A aceitação do desempenho às vezes requer um exercício próprio, levando meses para ser concluído.             |
@@ -23,21 +24,23 @@ disqus_comments: true
 
 
 ## Estrutural
-| **TERMO**                | **DEFINIÇÃO**                                                                                                                                                                                                                                    |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+| **TERMO**                  | **DEFINIÇÃO**                                                                                                                                                                                                                                  |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Configurabilidade          | Capacidade para os usuários finais alterarem facilmente aspectos da configuração do software (através de interfaces utilizáveis).                                                                                                              |
 | Extensibilidade            | Quão importante é conectar novas peças de funcionalidade.                                                                                                                                                                                      |
 | Instalabilidade            | Facilidade de instalação do sistema em todas as plataformas necessárias.                                                                                                                                                                       |
 | Alavancagem/reutilização   | Capacidade de alavancar componentes comuns em vários produtos.                                                                                                                                                                                 |
 | Localização                | Suporte para vários idiomas em telas de entrada/consulta em campos de dados; em relatórios, requisitos de caracteres multibyte e unidades de medida ou moedas.                                                                                 |
 | Manutenibilidade           | Quão fácil é aplicar as mudanças e aprimorar o sistema?                                                                                                                                                                                        |
-| Portabilidade              | O sistema precisa rodar em mais de uma plataforma? (Por exemplo, o front-end precisa ser executado no Oracle, bem como no SAP DB?                                                                                                              |
+| Portabilidade              | O sistema precisa rodar em mais de uma plataforma? (Por exemplo, o front-end precisa ser executado no Oracle, bem como no SAP DB?)                                                                                                             |
 | Capacidade de atualização  | Capacidade de atualizar fácil/rapidamente de uma versão anterior deste aplicativo/solução para uma versão mais recente em servidores e clientes.                                                                                               |
 
 
 ## Cross-Cutting
-| **TERMO**                | **DEFINIÇÃO**                                                                                                                                                                                                                                    |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+| **TERMO**                  | **DEFINIÇÃO**                                                                                                                                                                                                                                  |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Acessibilidade             | Acesso a todos os seus usuários, incluindo aqueles com deficiências como daltonismo ou perda auditiva.                                                                                                                                         |
 | Arquivabilidade            | Os dados precisarão ser arquivados ou excluídos após um período de tempo? (Por exemplo, contas de clientes devem ser excluídas após três meses ou marcadas como obsoletas e arquivadas em um banco de dados secundário para acesso futuro.)    |
 | Autenticação               | Requisitos de segurança para garantir que os usuários sejam quem dizem ser.                                                                                                                                                                    |
