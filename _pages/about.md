@@ -6,10 +6,9 @@ subtitle: Software Engineer
 
 profile:
   align: right
-  image: marlonbraga.jpg
+  image: #marlonbraga.jpg
   image_circular: true # crops the image to make it circular
-  address: >
-    "Code hard, play harder"
+  address: #>  "Code hard, play harder "
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"

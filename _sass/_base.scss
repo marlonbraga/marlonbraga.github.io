@@ -77,7 +77,7 @@ blockquote {
 // Card
 
 .card {
-  background-color: var(--global-card-bg-color);
+  //background-color: var(--global-card-bg-color);
 
   img {
     width: 100%;
@@ -205,7 +205,7 @@ blockquote {
     font-size: 1.7rem;
     a {
       i::before {
-        color: var(--global-text-color);
+        color: rgba(128,128,128,0.3);
         transition-property: all 0.2s ease-in-out;
       }
       &:hover {
@@ -270,12 +270,14 @@ blockquote {
     font-size: 4rem;
     a {
       i::before {
-        color: var(--global-text-color);
+        color: rgba(128,128,128,0.3);
         transition-property: all 0.2s ease-in-out;
       }
       &:hover {
         i::before {
           color: var(--global-theme-color);
+          text-shadow: 0px 0px 20px var(--global-theme-color);
+          transition: text-shadow 0.15s;
         }
       }
     }
@@ -317,17 +319,12 @@ footer.sticky-bottom {
   margin-bottom: 40px;
   
   .card {
-    background-color: var(--global-card-bg-color);
+    // background-color: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
-    
-    .list-group-item {
-      background-color: inherit;
-      border-color: var(--global-divider-color);
 
-      .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
-      }
+    .badge {
+      color: var(--global-card-bg-color) !important;
+      background-color: var(--global-theme-color) !important;
     }
   }
 }
